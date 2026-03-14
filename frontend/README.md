@@ -1,16 +1,48 @@
-# React + Vite
+# TaskFlow Pro 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack, real-time Kanban board SaaS application built with the MERN stack. TaskFlow Pro allows users to manage tasks across multiple workspaces with drag-and-drop functionality, real-time synchronization across different devices, and a fully responsive dark/light mode interface.
 
-Currently, two official plugins are available:
+**[Live Demo](https://taskflow-pro-cyan.vercel.app/)** | **[Backend API](https://taskflow-pro-api-852y.onrender.com/)**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Key Features
 
-## React Compiler
+- **Real-Time Synchronization:** Built with Socket.io to instantly reflect task movements (drag-and-drop) across all connected clients without refreshing.
+- **Optimistic UI Drag & Drop:** Utilizes native HTML5 drag-and-drop API with optimistic UI updates for a lightning-fast, zero-latency user experience.
+- **Secure Authentication:** Custom JWT-based authentication with encrypted passwords (bcrypt) and protected API routes.
+- **Multiple Workspaces:** Users can segregate tasks into "Personal" and "Work" boards.
+- **Modern State Management:** Uses Zustand for lightweight, boilerplate-free global state management (Auth state, UI state).
+- **Responsive & Accessible UI:** Fully responsive design built with Tailwind CSS v4, including a complete Dark Mode implementation.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+**Frontend:**
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React.js (Vite)
+- Tailwind CSS v4
+- Zustand (State Management)
+- React Router DOM
+- Socket.io-client
+- Axios
+- Lucide React (Icons)
+
+**Backend:**
+
+- Node.js & Express.js
+- MongoDB & Mongoose
+- Socket.io (WebSockets)
+- JSON Web Tokens (JWT)
+- Bcrypt (Password Hashing)
+
+## 🚀 Getting Started (Local Development)
+
+### Prerequisites
+
+- Node.js (v18+ recommended)
+- MongoDB database (Local or Atlas cluster)
+
+### 1. Clone the repository
+
+```bash
+git clone [https://github.com/ash14psb/taskflow-pro.git](https://github.com/ash14psb/taskflow-pro.git)
+cd taskflow-pro
+```
