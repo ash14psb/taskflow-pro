@@ -45,5 +45,5 @@ A full-stack, real-time Kanban board SaaS application built with the MERN stack.
 ### 1. Clone the repository
 
 ```bash
-git clone [https://github.com/ash14psb/taskflow-pro.git](https://github.com/ash14psb/taskflow-pro.git)
+git clone https://github.com/ash14psb/taskflow-pro.git
 cd taskflow-pro
