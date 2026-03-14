@@ -15,7 +15,11 @@ import {
 import { io } from "socket.io-client";
 import TaskModal from "../components/TaskModal";
 
-const socket = io("http://localhost:5000", { withCredentials: true });
+const SOCKET_URL = import.meta.env.VITE_API_URL
+  ? import.meta.env.VITE_API_URL.replace("/api/v1", "")
+  : "http://localhost:5000";
+
+const socket = io(SOCKET_URL, { withCredentials: true });
 
 const Dashboard = () => {
   const { user, logout } = useAuthStore();

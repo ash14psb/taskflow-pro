@@ -1,12 +1,10 @@
 import axios from "axios";
 
 const api = axios.create({
-  // Make sure this matches your backend port!
-  baseURL: "http://localhost:5000/api/v1",
-  withCredentials: true, // Important for cookies/sessions if we use them
+  baseURL: import.meta.env.VITE_API_URL || "http://localhost:5000/api/v1",
+  withCredentials: true,
 });
 
-// Automatically attach the token to every request if the user is logged in
 api.interceptors.request.use((config) => {
   const token = localStorage.getItem("token");
   if (token) {
